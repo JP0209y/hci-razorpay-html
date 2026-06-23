@@ -66,9 +66,7 @@
     scrollbar-width: none;
   }
 
-  .product-tabs::-webkit-scrollbar {
-    display: none;
-  }
+
 
   .product-tabs .nav-item {
     flex: 0 0 auto;
