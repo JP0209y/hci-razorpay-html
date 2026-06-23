@@ -14,29 +14,6 @@
 
 /* Tablet */
 @media (max-width: 991px) {
-
-   .pricing-chart-card {
-    padding: 22px;
-  }
-
-  .pricing-stats-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-  }
-
-  .pricing-stat-card {
-    padding: 16px;
-  }
-
-  .pricing-stat-card strong {
-    font-size: 24px;
-  }
-
-  .pricing-chart-wrap {
-    height: 540px;
-  }
-
-  
   button.navbar-toggler {
     position: absolute;
     top: 13px;
@@ -78,28 +55,37 @@
 
 /* Mobile Landscape / Small Tablet */
 @media (max-width: 767px) {
-.pricing-chart-card {
-    padding: 18px;
-    border-radius: 18px;
+
+   .product-tabs {
+    justify-content: flex-start !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 8px;
+    margin-bottom: 28px !important;
+    scrollbar-width: none;
   }
 
-  .pricing-filter-wrap {
-    gap: 8px;
+  .product-tabs::-webkit-scrollbar {
+    display: none;
   }
 
-  .pricing-filter {
-    padding: 8px 14px;
-    font-size: 12px;
+  .product-tabs .nav-item {
+    flex: 0 0 auto;
   }
 
-  .pricing-stats-grid {
-    grid-template-columns: 1fr;
+  .product-tabs .nav-link {
+    min-width: auto;
+    font-size: 14px;
+    padding: 11px 20px;
+    white-space: nowrap;
   }
 
-  .pricing-chart-wrap {
-    height: 620px;
-    padding: 12px;
+   .product-tabs .nav-link {
+    font-size: 13px;
+    padding: 10px 16px;
   }
+
 
   .compact-footer-box {
     padding: 20px 0px;
@@ -196,7 +182,7 @@
   }
 
 
-
+  
 }
 
 /* Very Small Mobile */

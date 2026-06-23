@@ -311,6 +311,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
     <section class="section-space" id="benefits">
@@ -518,83 +519,309 @@
         </div>
       </div>
     </section>
-    <!-- ===== PRODUCT DETAILS & MARGIN CHART SECTION ===== -->
+
+    <!-- ===== PRODUCT DETAILS  ===== -->
    
-    <section class="section-space section-soft" id="product-pricing">
+   
+<section class="section-space section-soft" id="product-pricing">
   <div class="container">
+
     <div class="text-center mb-4 mb-md-5">
       <span class="section-tag justify-content-center">
         <i class="fa-solid fa-chart-bar"></i> Product Portfolio
       </span>
-
       <h2 class="section-title">Product Details &amp; Dealer Margin</h2>
-
       <p class="section-desc mx-auto">
         Premium massage chair lineup with transparent dealer margins up to
-        45%. Hover on any bar to see full pricing details.
+        45%. Hover on any product to see full details.
       </p>
     </div>
 
-    <div class="pricing-chart-card">
-      <!-- FILTER BUTTONS -->
-      <div class="pricing-filter-wrap">
-        <button type="button" class="pricing-filter active" data-brand="all">
-          All
+    <!-- Tabs -->
+    <ul class="nav product-tabs justify-content-center mb-5" id="productTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="all-products-tab" data-bs-toggle="tab" data-bs-target="#all-products" type="button" role="tab" aria-controls="all-products" aria-selected="true">
+          All Products
         </button>
-
-        <button type="button" class="pricing-filter" data-brand="HCI">
-          HCI
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="hci-range-tab" data-bs-toggle="tab" data-bs-target="#hci-range" type="button" role="tab" aria-controls="hci-range" aria-selected="false">
+          HCI Range
         </button>
-
-        <button type="button" class="pricing-filter" data-brand="ROTAI">
-          ROTAI
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="rotai-range-tab" data-bs-toggle="tab" data-bs-target="#rotai-range" type="button" role="tab" aria-controls="rotai-range" aria-selected="false">
+          ROTAI Range
         </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="fujiiryoki-range-tab" data-bs-toggle="tab" data-bs-target="#fujiiryoki-range" type="button" role="tab" aria-controls="fujiiryoki-range" aria-selected="false">
+          Fujiiryoki Range
+        </button>
+      </li>
+    </ul>
 
-        
-      </div>
+    <!-- Tab Content -->
+    <div class="tab-content" id="productTabsContent">
 
-      <!-- STATS -->
-      <div class="pricing-stats-grid">
-        <div class="pricing-stat-card">
-          <span>Avg Margin</span>
-          <strong id="avg-margin">34%</strong>
+      <!-- All Products -->
+      <div class="tab-pane fade show active" id="all-products" role="tabpanel" aria-labelledby="all-products-tab">
+        <div class="slider-wrapper product-slider-wrapper">
+          <button class="product-slide-prev" type="button" aria-label="Previous product">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="product-slide-next" type="button" aria-label="Next product">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <div class="swiper product-card-swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="HCI eZEN" loading="lazy" decoding="async">
+                    <span class="product-brand-tag hci-tag">HCI</span>
+                  </div>
+                  <h4>HCI eZEN</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Full Body Relaxation &amp; Daily Comfort</div>
+                  <div class="product-description"><strong>Technology -</strong> Smart Massage Programs &amp; Comfort Support</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="HCI eGENKI PRO" loading="lazy" decoding="async">
+                    <span class="product-brand-tag hci-tag">HCI</span>
+                  </div>
+                  <h4>HCI eGENKI PRO</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Full Body Relaxation &amp; Recovery</div>
+                  <div class="product-description"><strong>Technology -</strong> 4D Massage, Zero Gravity &amp; Air Compression</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="HCI eRELAXIC LITE" loading="lazy" decoding="async">
+                    <span class="product-brand-tag hci-tag">HCI</span>
+                  </div>
+                  <h4>HCI eRELAXIC LITE</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Stress Relief &amp; Better Relaxation</div>
+                  <div class="product-description"><strong>Technology -</strong> Auto Massage Programs &amp; Body Support</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="HCI eRELAXIC PRO" loading="lazy" decoding="async">
+                    <span class="product-brand-tag hci-tag">HCI</span>
+                  </div>
+                  <h4>HCI eRELAXIC PRO</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Muscle Relief &amp; Deep Relaxation</div>
+                  <div class="product-description"><strong>Technology -</strong> Zero Gravity, Heat Therapy &amp; Air Massage</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="HCI eRELAXIC NEO" loading="lazy" decoding="async">
+                    <span class="product-brand-tag hci-tag">HCI</span>
+                  </div>
+                  <h4>HCI eRELAXIC NEO</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Premium Relaxation &amp; Fatigue Relief</div>
+                  <div class="product-description"><strong>Technology -</strong> Advanced Massage Modes &amp; Comfort Seating</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="ROTAI R-RELAX" loading="lazy" decoding="async">
+                    <span class="product-brand-tag rotai-tag">ROTAI</span>
+                  </div>
+                  <h4>ROTAI R-RELAX</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Relaxation, Comfort &amp; Stress Relief</div>
+                  <div class="product-description"><strong>Technology -</strong> Massage Rollers &amp; Easy Control System</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="ROTAI R-NEXA" loading="lazy" decoding="async">
+                    <span class="product-brand-tag rotai-tag">ROTAI</span>
+                  </div>
+                  <h4>ROTAI R-NEXA</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Body Comfort &amp; Muscle Recovery</div>
+                  <div class="product-description"><strong>Technology -</strong> Smart Massage, Airbags &amp; Auto Programs</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="ROTAI R-ZENORA" loading="lazy" decoding="async">
+                    <span class="product-brand-tag rotai-tag">ROTAI</span>
+                  </div>
+                  <h4>ROTAI R-ZENORA</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Deep Relaxation &amp; Better Sleep Support</div>
+                  <div class="product-description"><strong>Technology -</strong> Zero Gravity, Heat Therapy &amp; Full Body Massage</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="ROTAI R-AUREX" loading="lazy" decoding="async">
+                    <span class="product-brand-tag rotai-tag">ROTAI</span>
+                  </div>
+                  <h4>ROTAI R-AUREX</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Luxury Relaxation &amp; Pain Relief</div>
+                  <div class="product-description"><strong>Technology -</strong> Advanced Rollers, Air Compression &amp; Body Scan</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="ROTAI R-VELOR" loading="lazy" decoding="async">
+                    <span class="product-brand-tag rotai-tag">ROTAI</span>
+                  </div>
+                  <h4>ROTAI R-VELOR</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Premium Wellness &amp; Complete Body Recovery</div>
+                  <div class="product-description"><strong>Technology -</strong> 4D Massage, Body Scan &amp; Smart Controls</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="HCI eLEG" loading="lazy" decoding="async">
+                    <span class="product-brand-tag hci-tag">HCI</span>
+                  </div>
+                  <h4>HCI eLEG</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Leg Relaxation &amp; Tiredness Relief</div>
+                  <div class="product-description"><strong>Technology -</strong> Leg Massage Rollers &amp; Air Compression</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="HCI eFOOTIO" loading="lazy" decoding="async">
+                    <span class="product-brand-tag hci-tag">HCI</span>
+                  </div>
+                  <h4>HCI eFOOTIO</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Foot Relaxation &amp; Comfort Support</div>
+                  <div class="product-description"><strong>Technology -</strong> Foot Roller Massage &amp; Heat Support</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="HCI eKIMOCHI" loading="lazy" decoding="async">
+                    <span class="product-brand-tag hci-tag">HCI</span>
+                  </div>
+                  <h4>HCI eKIMOCHI</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Compact Relaxation &amp; Daily Wellness</div>
+                  <div class="product-description"><strong>Technology -</strong> Smart Massage Function &amp; Easy Operation</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="Fujiiryoki Massage Chair" loading="lazy" decoding="async">
+                    <span class="product-brand-tag fujiiryoki-tag">Fujiiryoki</span>
+                  </div>
+                  <h4>Fujiiryoki Massage Chair</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Premium Japanese Relaxation &amp; Full Body Comfort</div>
+                  <div class="product-description"><strong>Technology -</strong> Japanese Massage Technology &amp; Advanced Body Scan</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="partner-card product-card">
+                  <div class="partner-img">
+                    <img src="images/product01.webp" alt="Fujiiryoki Wellness Chair" loading="lazy" decoding="async">
+                    <span class="product-brand-tag fujiiryoki-tag">Fujiiryoki</span>
+                  </div>
+                  <h4>Fujiiryoki Wellness Chair</h4>
+                  <div class="product-description"><strong>Benefits -</strong> Deep Relaxation, Recovery &amp; Luxury Comfort</div>
+                  <div class="product-description"><strong>Technology -</strong> Advanced Roller System, Heat Therapy &amp; Auto Programs</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="pricing-stat-card">
-          <span>Highest Margin</span>
-          <strong id="max-margin">45%</strong>
+      <!-- HCI Range -->
+      <div class="tab-pane fade" id="hci-range" role="tabpanel" aria-labelledby="hci-range-tab">
+        <div class="slider-wrapper product-slider-wrapper">
+          <button class="product-slide-prev" type="button" aria-label="Previous HCI product"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="product-slide-next" type="button" aria-label="Next HCI product"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="swiper product-card-swiper">
+            <div class="swiper-wrapper">
+              <!-- HCI products only -->
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="HCI eZEN" loading="lazy" decoding="async"><span class="product-brand-tag hci-tag">HCI</span></div><h4>HCI eZEN</h4><div class="product-description"><strong>Benefits -</strong> Full Body Relaxation &amp; Daily Comfort</div><div class="product-description"><strong>Technology -</strong> Smart Massage Programs &amp; Comfort Support</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="HCI eGENKI PRO" loading="lazy" decoding="async"><span class="product-brand-tag hci-tag">HCI</span></div><h4>HCI eGENKI PRO</h4><div class="product-description"><strong>Benefits -</strong> Full Body Relaxation &amp; Recovery</div><div class="product-description"><strong>Technology -</strong> 4D Massage, Zero Gravity &amp; Air Compression</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="HCI eRELAXIC LITE" loading="lazy" decoding="async"><span class="product-brand-tag hci-tag">HCI</span></div><h4>HCI eRELAXIC LITE</h4><div class="product-description"><strong>Benefits -</strong> Stress Relief &amp; Better Relaxation</div><div class="product-description"><strong>Technology -</strong> Auto Massage Programs &amp; Body Support</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="HCI eRELAXIC PRO" loading="lazy" decoding="async"><span class="product-brand-tag hci-tag">HCI</span></div><h4>HCI eRELAXIC PRO</h4><div class="product-description"><strong>Benefits -</strong> Muscle Relief &amp; Deep Relaxation</div><div class="product-description"><strong>Technology -</strong> Zero Gravity, Heat Therapy &amp; Air Massage</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="HCI eRELAXIC NEO" loading="lazy" decoding="async"><span class="product-brand-tag hci-tag">HCI</span></div><h4>HCI eRELAXIC NEO</h4><div class="product-description"><strong>Benefits -</strong> Premium Relaxation &amp; Fatigue Relief</div><div class="product-description"><strong>Technology -</strong> Advanced Massage Modes &amp; Comfort Seating</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="HCI eLEG" loading="lazy" decoding="async"><span class="product-brand-tag hci-tag">HCI</span></div><h4>HCI eLEG</h4><div class="product-description"><strong>Benefits -</strong> Leg Relaxation &amp; Tiredness Relief</div><div class="product-description"><strong>Technology -</strong> Leg Massage Rollers &amp; Air Compression</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="HCI eFOOTIO" loading="lazy" decoding="async"><span class="product-brand-tag hci-tag">HCI</span></div><h4>HCI eFOOTIO</h4><div class="product-description"><strong>Benefits -</strong> Foot Relaxation &amp; Comfort Support</div><div class="product-description"><strong>Technology -</strong> Foot Roller Massage &amp; Heat Support</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="HCI eKIMOCHI" loading="lazy" decoding="async"><span class="product-brand-tag hci-tag">HCI</span></div><h4>HCI eKIMOCHI</h4><div class="product-description"><strong>Benefits -</strong> Compact Relaxation &amp; Daily Wellness</div><div class="product-description"><strong>Technology -</strong> Smart Massage Function &amp; Easy Operation</div></div></div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="pricing-stat-card">
-          <span>Total Products</span>
-          <strong id="product-count">13</strong>
+      <!-- ROTAI Range -->
+      <div class="tab-pane fade" id="rotai-range" role="tabpanel" aria-labelledby="rotai-range-tab">
+        <div class="slider-wrapper product-slider-wrapper">
+          <button class="product-slide-prev" type="button" aria-label="Previous ROTAI product"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="product-slide-next" type="button" aria-label="Next ROTAI product"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="swiper product-card-swiper">
+            <div class="swiper-wrapper">
+              <!-- ROTAI products only -->
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="ROTAI R-RELAX" loading="lazy" decoding="async"><span class="product-brand-tag rotai-tag">ROTAI</span></div><h4>ROTAI R-RELAX</h4><div class="product-description"><strong>Benefits -</strong> Relaxation, Comfort &amp; Stress Relief</div><div class="product-description"><strong>Technology -</strong> Massage Rollers &amp; Easy Control System</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="ROTAI R-NEXA" loading="lazy" decoding="async"><span class="product-brand-tag rotai-tag">ROTAI</span></div><h4>ROTAI R-NEXA</h4><div class="product-description"><strong>Benefits -</strong> Body Comfort &amp; Muscle Recovery</div><div class="product-description"><strong>Technology -</strong> Smart Massage, Airbags &amp; Auto Programs</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="ROTAI R-ZENORA" loading="lazy" decoding="async"><span class="product-brand-tag rotai-tag">ROTAI</span></div><h4>ROTAI R-ZENORA</h4><div class="product-description"><strong>Benefits -</strong> Deep Relaxation &amp; Better Sleep Support</div><div class="product-description"><strong>Technology -</strong> Zero Gravity, Heat Therapy &amp; Full Body Massage</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="ROTAI R-AUREX" loading="lazy" decoding="async"><span class="product-brand-tag rotai-tag">ROTAI</span></div><h4>ROTAI R-AUREX</h4><div class="product-description"><strong>Benefits -</strong> Luxury Relaxation &amp; Pain Relief</div><div class="product-description"><strong>Technology -</strong> Advanced Rollers, Air Compression &amp; Body Scan</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="ROTAI R-VELOR" loading="lazy" decoding="async"><span class="product-brand-tag rotai-tag">ROTAI</span></div><h4>ROTAI R-VELOR</h4><div class="product-description"><strong>Benefits -</strong> Premium Wellness &amp; Complete Body Recovery</div><div class="product-description"><strong>Technology -</strong> 4D Massage, Body Scan &amp; Smart Controls</div></div></div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- LEGEND -->
-      <div class="pricing-legend">
-        <span><i class="legend-dot hci"></i> HCI</span>
-        <span><i class="legend-dot rotai"></i> ROTAI</span>
-        
+      <!-- Fujiiryoki Range -->
+      <div class="tab-pane fade" id="fujiiryoki-range" role="tabpanel" aria-labelledby="fujiiryoki-range-tab">
+        <div class="slider-wrapper product-slider-wrapper">
+          <button class="product-slide-prev" type="button" aria-label="Previous Fujiiryoki product"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="product-slide-next" type="button" aria-label="Next Fujiiryoki product"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="swiper product-card-swiper">
+            <div class="swiper-wrapper">
+              <!-- Fujiiryoki products only -->
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="Fujiiryoki Massage Chair" loading="lazy" decoding="async"><span class="product-brand-tag fujiiryoki-tag">Fujiiryoki</span></div><h4>Fujiiryoki Massage Chair</h4><div class="product-description"><strong>Benefits -</strong> Premium Japanese Relaxation &amp; Full Body Comfort</div><div class="product-description"><strong>Technology -</strong> Japanese Massage Technology &amp; Advanced Body Scan</div></div></div>
+              <div class="swiper-slide"><div class="partner-card product-card"><div class="partner-img"><img src="images/product01.webp" alt="Fujiiryoki Wellness Chair" loading="lazy" decoding="async"><span class="product-brand-tag fujiiryoki-tag">Fujiiryoki</span></div><h4>Fujiiryoki Wellness Chair</h4><div class="product-description"><strong>Benefits -</strong> Deep Relaxation, Recovery &amp; Luxury Comfort</div><div class="product-description"><strong>Technology -</strong> Advanced Roller System, Heat Therapy &amp; Auto Programs</div></div></div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- CHART -->
-      <div id="chart-wrap" class="pricing-chart-wrap">
-        <canvas
-          id="roiChart"
-          role="img"
-          aria-label="Bar chart showing dealer margin percentage for each product"
-        >
-          Product margins range from 10% to 45%.
-        </canvas>
-      </div>
     </div>
   </div>
 </section>
 
 
 
-    </section>
     <!-- ===== END PRODUCT CHART SECTION ===== -->
     <section class="section-space apply-section" id="apply">
       <div class="container position-relative">
@@ -1047,10 +1274,7 @@
       defer="defer"
     ></script>
 
-    <!-- Chart JS  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" defer></script>
-    <script src="js/chart.js" defer="defer"></script>
-
+   
     <!-- Swiper JS  -->
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
