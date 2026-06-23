@@ -8,8 +8,6 @@
   .hero-title {
     font-size: 40px;
   }
-
-  
 }
 
 /* Tablet */
@@ -55,18 +53,14 @@
 
 /* Mobile Landscape / Small Tablet */
 @media (max-width: 767px) {
-
-   .product-tabs {
+  .product-tabs {
     justify-content: flex-start !important;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 10px;
     padding-bottom: 8px;
     margin-bottom: 28px !important;
-    
   }
-
-
 
   .product-tabs .nav-item {
     flex: 0 0 auto;
@@ -79,11 +73,10 @@
     white-space: nowrap;
   }
 
-   .product-tabs .nav-link {
+  .product-tabs .nav-link {
     font-size: 13px;
     padding: 10px 16px;
   }
-
 
   .compact-footer-box {
     padding: 20px 0px;
@@ -110,8 +103,6 @@
   .benefit-card {
     gap: 14px;
   }
-
-  
 }
 
 /* Mobile */
@@ -178,9 +169,6 @@
   .apply-info-card {
     padding: 22px;
   }
-
-
-  
 }
 
 /* Very Small Mobile */

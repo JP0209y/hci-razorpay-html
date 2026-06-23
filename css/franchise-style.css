@@ -339,9 +339,6 @@ img {
   margin-bottom: 10px;
 }
 
-
-
-
 .partner-card p,
 .benefit-card p,
 .setup-card p {
@@ -351,9 +348,9 @@ img {
   font-size: 14px;
 }
 
-
-.partner-card p{
-  font-size: 16px;}
+.partner-card p {
+  font-size: 16px;
+}
 
 .benefit-card {
   display: flex;
@@ -600,14 +597,12 @@ img {
   line-height: 1;
 }
 
-
 /* ===============================
    COMMON SLIDER WRAPPER
 =============================== */
 
 .slider-wrapper {
   position: relative;
-  
 }
 
 /* ===============================
@@ -701,7 +696,6 @@ img {
   height: auto;
 }
 
-
 .product-card .partner-img {
   position: relative;
   overflow: hidden;
@@ -737,7 +731,6 @@ img {
 .product-brand-tag.fujiiryoki-tag {
   background: #145292;
 }
-
 
 .product-card .product-description {
   margin-top: 8px;
@@ -862,7 +855,7 @@ img {
   height: 46px;
   border: none;
   border-radius: 50%;
-  background: #6b3f22;
+  background: #e18548;
   color: #fff;
   display: flex;
   align-items: center;
@@ -889,7 +882,6 @@ img {
 .back-to-top i {
   font-size: 16px;
 }
-
 
 /* ===============================
    PRODUCT TABS
@@ -933,24 +925,4 @@ img {
 
 .product-tabs .nav-link:focus {
   box-shadow: 0 0 0 4px rgba(176, 122, 75, 0.18);
-}
-
-/* ===============================
-   TAB CONTENT ANIMATION
-=============================== */
-
-#productTabsContent .tab-pane {
-  animation: tabFade 0.35s ease;
-}
-
-@keyframes tabFade {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
