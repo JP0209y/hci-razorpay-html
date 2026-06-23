@@ -331,9 +331,9 @@ img {
   height: auto;
 }
 
-.partner-card h4,
-.benefit-card h4,
-.setup-card h4 {
+.partner-card h3,
+.benefit-card h3,
+.setup-card h3 {
   font-size: 19px;
   font-weight: 900;
   margin-bottom: 10px;
@@ -766,8 +766,8 @@ img {
   line-height: 1.7;
 }
 
-.compact-contact h6,
-.compact-social h6 {
+.compact-contact h4,
+.compact-social h4 {
   margin-bottom: 14px;
   color: #8a552d;
   font-size: 13px;
