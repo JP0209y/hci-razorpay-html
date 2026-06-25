@@ -53,6 +53,33 @@
 
 /* Mobile Landscape / Small Tablet */
 @media (max-width: 767px) {
+
+  .product-pricing-box {
+    padding: 22px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .pricing-box-content {
+    align-items: flex-start;
+  }
+
+  .pricing-text h4 {
+    font-size: 18px;
+  }
+
+  .pricing-text p {
+    font-size: 14px;
+  }
+
+  .pricing-cta-btn {
+    width: 100%;
+  }
+
+
+
   .product-tabs {
     justify-content: flex-start !important;
     flex-wrap: nowrap;
@@ -103,6 +130,19 @@
   .benefit-card {
     gap: 14px;
   }
+}
+
+@media (min-width: 768px) {
+
+.partner-card.product-card {
+    min-height: 520px;
+}
+
+.partner-card.product-card h3 {
+   font-size: 16px;
+}
+
+
 }
 
 /* Mobile */
