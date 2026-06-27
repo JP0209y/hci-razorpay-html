@@ -1,0 +1,259 @@
+/* ================================
+   RESPONSIVE CSS
+================================ */
+
+/* ================================
+   TABLET / SMALL DESKTOP
+   max-width: 991px
+================================ */
+
+@media (max-width: 991px) {
+
+  .contact-qr-support-card {
+    min-height: auto;
+  }
+
+    .contact-support-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+
+   .support-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+
+  .site-navbar .container {
+
+    position: relative;
+  }
+
+  .site-navbar .navbar-brand {
+    margin-left: 70px;
+  }
+
+  .site-navbar .navbar-toggler {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    z-index: 10;
+    box-shadow: none;
+  }
+
+  .site-navbar .nav-link {
+    padding: 12px 0 !important;
+  }
+
+  .hero-section {
+    min-height: auto;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 72px 0;
+  }
+
+  .about-content {
+    padding: 28px;
+  }
+
+  .building-visual {
+    min-height: 300px;
+  }
+
+
+}
+
+/* ================================
+   MOBILE
+   max-width: 767px
+================================ */
+
+@media (max-width: 767px) {
+
+    .contact-qr-support-card {
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .contact-qr-support-card h2 {
+    font-size: 20px;
+  }
+
+  .contact-qr-box {
+    max-width: 230px;
+  }
+
+  .contact-support-card {
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .contact-support-card h2 {
+    font-size: 22px;
+  }
+
+  .contact-support-item {
+    align-items: flex-start;
+    min-height: auto;
+  }
+  
+    .support-form-card,
+  .support-info-card {
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .support-form-card h2,
+  .support-info-card h2 {
+    font-size: 22px;
+  }
+
+   .faq-card {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .faq-group:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .faq-group h2 {
+    font-size: 21px;
+  }
+
+  .faq-accordion .accordion-button {
+    padding: 14px 15px;
+    font-size: 14px;
+  }
+
+  .faq-accordion .accordion-body {
+    padding: 14px 15px 16px;
+    font-size: 14px;
+  }
+
+   .inner-hero {
+    padding: 58px 0 50px;
+  }
+
+  .policy-card {
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .policy-card h2 {
+    font-size: 21px;
+  }
+
+  .policy-card h3 {
+    font-size: 17px;
+  }
+
+
+  .section-container {
+    padding: 42px 0;
+  }
+
+  .section-title {
+    margin-bottom: 24px;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  .site-navbar .navbar-brand {
+    margin-left: 54px;
+  }
+
+  .site-navbar .navbar-toggler {
+    top: 9px;
+    left: 10px;
+  }
+
+  .hero-content {
+    padding: 56px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 30px;
+    letter-spacing: -0.035em;
+  }
+
+  .hero-section p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .action-btn {
+    width: 100%;
+  }
+
+  .steps-wrap,
+  .feature-grid,
+  .payment-logos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .step-card,
+  .plan-card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .step-card:not(:last-child)::after {
+    display: none;
+  }
+
+  .payment-logos {
+    gap: 12px;
+  }
+
+  .pay-logo {
+    min-height: 54px;
+  }
+
+  .pay-logo img {
+    height: 30px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .about-content {
+    padding: 22px;
+  }
+
+  .building-visual {
+    min-height: 240px;
+  }
+
+  .footer-top {
+    padding: 34px 0 20px;
+  }
+}
+
+/* ================================
+   TABLET ONLY
+   768px to 991px
+================================ */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .steps-wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px;
+  }
+
+  .step-card:not(:last-child)::after {
+    display: none;
+  }
+}
