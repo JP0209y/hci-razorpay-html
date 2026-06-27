@@ -180,11 +180,16 @@ p {
   height: 40px;
 }
 
+.site-navbar .active-page .nav-link {
+  color: #ae7128 !important;
+  font-weight: 700;
+}
+
 .site-navbar .nav-link {
   padding: 24px 16px !important;
   color: var(--text) !important;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .site-navbar .nav-link.active,
@@ -202,12 +207,16 @@ p {
 ================================ */
 
 .hero-section {
-  position: relative;
-  color: #fff;
-  background-image: url("../images/hero-banner.png");
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
+    position: relative;
+    color: #fff;
+    background-image: url(../images/hero-banner.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 621px;
 }
 
 .hero-section .container {
@@ -221,10 +230,10 @@ p {
 }
 
 .hero-section h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 54px;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
 }
 
 .hero-section h1 span {
@@ -417,11 +426,17 @@ p {
 
 .payment-logos {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: center;
   gap: 22px;
   max-width: 700px;
   margin: auto;
+}
+
+.pay-logo img {
+  height: 30px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .pay-logo {
@@ -495,11 +510,6 @@ p {
     #e8e4db;
 }
 
-
-
-
-
-
 /* ================================
    POLICY PAGES
 ================================ */
@@ -533,14 +543,12 @@ p {
 }
 
 .inner-hero h1 {
-    margin: 0;
-    color: #ffffff;
-    font-size: 40px;
-    line-height: 1.15;
-    font-weight: 800;
-   
+  margin: 0;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 1.15;
+  font-weight: 700;
 }
-
 
 .inner-hero p {
   max-width: 680px;
@@ -548,6 +556,7 @@ p {
   color: #f5f2ed;
   font-size: 16px;
   line-height: 1.75;
+  font-weight: 400;
 }
 
 .policy-section {
@@ -637,8 +646,6 @@ p {
 .policy-contact-box p:last-child {
   margin-bottom: 0;
 }
-
-
 
 /* ================================
    FAQ PAGE
@@ -866,7 +873,6 @@ p {
   line-height: 1.7;
 }
 
-
 /* ================================
    CONTACT US PAGE - SUPPORT STYLE
 ================================ */
@@ -920,16 +926,14 @@ p {
   gap: 12px;
   min-height: 68px;
   padding: 15px 0px;
- 
+
   color: var(--text);
- 
+
   text-decoration: none;
   transition: 0.25s ease;
-  
-  border-bottom: 1px solid  var(--border);
+
+  border-bottom: 1px solid var(--border);
 }
-
-
 
 .contact-support-item i {
   flex: 0 0 40px;
@@ -958,8 +962,6 @@ p {
   font-size: 13px;
   font-weight: 800;
 }
-
-
 
 /* ================================
    CONTACT QR SUPPORT CARD
@@ -995,20 +997,30 @@ p {
 }
 
 .contact-qr-box {
-  width: min(100%, 260px);
-  aspect-ratio: 1 / 1;
-  display: grid;
-  place-items: center;
-  margin: 0 auto 32px;
-  border: 4px solid var(--primary);
-  border-radius: 14px;
-  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
   background: #ffffff;
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 0.02em;
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
+.contact-qr-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.contact-qr-box span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3f4f44;
+}
 .contact-qr-content h3 {
   margin: 0 0 14px;
   color: var(--text);
@@ -1039,11 +1051,13 @@ p {
   font-size: 17px;
 }
 
-
-
 /* ================================
    FOOTER
 ================================ */
+
+.footer-bottom a {
+  color: #d39360 !important;
+}
 
 .site-footer {
   color: #d9e7fb;
@@ -1132,17 +1146,17 @@ p {
 }
 
 .footer-contact-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    min-height: 38px;
-    padding: 8px 12px;
-    border-radius: 10px;
-    color: #d8d4cc;
-    background: rgba(255, 255, 255, 0.06);
-    text-decoration: none;
-    transition: 0.25s ease;
-    width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 38px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: #d8d4cc;
+  background: rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+  transition: 0.25s ease;
+  width: 100%;
 }
 
 .footer-contact-item:hover {

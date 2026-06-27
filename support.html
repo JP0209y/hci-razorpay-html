@@ -116,7 +116,7 @@
         </div>
 
         <a class="action-btn primary-btn d-lg-none w-auto" href="support.html">
-          Get in Touch
+          Get in Touch <i class="material-symbols-outlined">arrow_forward</i>
         </a>
 
         <button
@@ -134,14 +134,14 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="faq.html">FAQ</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active-page">
               <a class="nav-link" href="support.html">Support</a>
             </li>
 
@@ -151,10 +151,10 @@
           </ul>
 
           <a
-            class="action-btn primary-btn d-none d-lg-block"
+            class="action-btn primary-btn d-none d-lg-flex"
             href="support.html"
           >
-            Get in Touch
+            Get in Touch <i class="material-symbols-outlined">arrow_forward</i>
           </a>
         </div>
       </div>
@@ -195,88 +195,98 @@
                 your request and contact you shortly.
               </p>
 
-             <form action="#" method="post" class="support-form" novalidate>
-  <div class="row g-3">
-    <div class="col-md-6">
-      <label for="name" class="form-label">
-        Full Name <span class="text-danger">*</span>
-      </label>
-      <input
-        type="text"
-        class="form-control"
-        id="name"
-        name="name"
-        placeholder="Enter your full name"
-        required
-      />
-      <div class="invalid-feedback">Please enter your full name.</div>
-    </div>
+              <form action="#" method="post" class="support-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">
+                      Full Name <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your full name.
+                    </div>
+                  </div>
 
-    <div class="col-md-6">
-      <label for="phone" class="form-label">
-        Mobile Number <span class="text-danger">*</span>
-      </label>
-      <input
-        type="tel"
-        class="form-control"
-        id="phone"
-        name="phone"
-        placeholder="Enter your mobile number"
-        maxlength="10"
-        pattern="[6-9][0-9]{9}"
-        required
-      />
-      <div class="invalid-feedback">
-        Please enter a valid 10 digit Indian mobile number.
-      </div>
-    </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">
+                      Mobile Number <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      placeholder="Enter your mobile number"
+                      maxlength="10"
+                      pattern="[6-9][0-9]{9}"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter a valid 10 digit Indian mobile number.
+                    </div>
+                  </div>
 
-    <div class="col-12">
-      <label for="location" class="form-label">
-        Location <span class="text-danger">*</span>
-      </label>
-      <input
-        type="text"
-        class="form-control"
-        id="location"
-        name="location"
-        placeholder="Enter chair/location details"
-        required
-      />
-      <div class="invalid-feedback">Please enter chair/location details.</div>
-    </div>
+                  <div class="col-12">
+                    <label for="location" class="form-label">
+                      Location <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="location"
+                      name="location"
+                      placeholder="Enter location details"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter location details.
+                    </div>
+                  </div>
 
-    <div class="col-12">
-      <label for="message" class="form-label">
-        Message <span class="text-danger">*</span>
-      </label>
-      <textarea
-        class="form-control"
-        id="message"
-        name="message"
-        rows="5"
-        placeholder="Please describe your issue..."
-        required
-      ></textarea>
-      <div class="invalid-feedback">Please enter your message.</div>
-    </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">
+                      Message <span class="text-danger">*</span>
+                    </label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Please describe your issue..."
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Please enter your message.
+                    </div>
+                  </div>
 
-    <div class="col-12">
-      <button type="submit" class="action-btn primary-btn submit-btn">
-        <span class="btn-text">Submit Request</span>
-        <span class="btn-loading d-none">
-          <span
-            class="spinner-border spinner-border-sm me-2"
-            aria-hidden="true"
-          ></span>
-          Submitting...
-        </span>
-        <i class="material-symbols-outlined btn-icon">arrow_forward</i>
-      </button>
-    </div>
-  </div>
-</form>
-
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="action-btn primary-btn submit-btn"
+                    >
+                      <span class="btn-text">Submit Request</span>
+                      <span class="btn-loading d-none">
+                        <span
+                          class="spinner-border spinner-border-sm me-2"
+                          aria-hidden="true"
+                        ></span>
+                        Submitting...
+                      </span>
+                      <i class="material-symbols-outlined btn-icon"
+                        >arrow_forward</i
+                      >
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
 
             <div class="support-info-card">
@@ -292,7 +302,7 @@
                     <i class="fa-solid fa-envelope"></i>
                     <span>
                       <strong>Email</strong>
-                      support@humancarei.com
+                      support@hcicomfortzone.com
                     </span>
                   </div>
                 </li>
@@ -439,7 +449,9 @@
       </div>
 
       <div class="footer-bottom">
-        © <span id="currentYear">2026</span> HCI Pvt. Ltd. All rights reserved.
+        © <span id="currentYear">2026</span>
+        <a href="https://humancarei.com/" target="_blank">HCI</a> Pvt. Ltd. All
+        rights reserved.
       </div>
     </footer>
 
